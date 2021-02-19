@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <title>Video Compression with CNN-based Post Processing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+</head>
+
+        <!-- you should probably put some google analytics / meta bits and pieces
+	    here : PRH 
+    <meta property="og:title" content="Paul Hill's Website"> etc.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=??????????"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '??????????');
+  </script>
+    -->
+
+<body id="page-top">
+    <div class="page-container">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="row vertical-align">
+  
+                        <div class="col-md-10">
+                            <div class="title">
+                                <h1><b><center>Video Compression with CNN-based Post Processing</center></b></h1>
+                                <div class="container-sm">
+								  <div class="row justify-content-md-center">									                                       
+                                        <div class="col-sm-auto">
+                                            <p><a href='https://seis.bristol.ac.uk/~eexfz/index.htm'>Fan Zhang</a></p>
+                                        </div>
+										 <div class="col-sm-auto">
+                                            <p>Di Ma</p>
+                                        </div>
+																				 <div class="col-sm-auto">
+                                            <p>Chen Feng</p>
+                                        </div>
+									<div class="col-sm-auto">
+                                            <p><a href='http://www.bristol.ac.uk/engineering/people/paul-r-hill/index.html'>David Bull</a></p>
+                                        </div>
+									
+                                    </div>
+									<center><p>University of Bristol</p></center>
+                                </div>
+                            </div>
+                        </div>
+			<div class="col-md-2">
+			    <p><a href='https://www.bristol.ac.uk'><img src="../uob-logo.svg" width="100%" height="20%" alt=""></a></p>
+			    <p><a href='https://www.bristol.ac.uk/vision-institute'><img src="../bvilogo.png" width="100%" height="20%" alt=""></a></p>
+			     <p><a href='https://vilab.blogs.bristol.ac.uk'><img src="../VILogo.jpg" width="100%" height="20%" alt=""></a></p>
+			    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md">
+                <h2>About</h2>
+                <p>In recent years, video compression techniques have been significantly challenged by the rapidly increased demands associated with high quality and immersive video content. Among various compression tools, post-processing can be applied on reconstructed video content to mitigate visible compression
+artefacts and to enhance overall perceptual quality. Inspired by advances in deep learning, we propose a new CNN-based post-processing approach, which has been integrated with two state-of-the-art coding standards, VVC and AV1. 
+ </p>
+            </div>
+            <hr />
+            <div class="container-md">
+                <h2 id="poster">Performance</h2>
+                The results show consistent coding gains on all tested sequences at various spatial resolutions, with average bit rate savings of 4.0% and 5.8% against original VVC and AV1 respectively (based on the assessment of PSNR). This network has also been trained with perceptually inspired loss functions, swhich have further improved reconstruction quality based on perceptual quality assessment (VMAF), with average coding gains of 13.9% over VVC and 10.5% against AV1.
+
+
+            </div>
+			<hr />
+            <div class="container-md">
+                <h2>Reference</h2>
+<p>@article{zhang2021video,<br>
+  title={Video compression with CNN-based post processing},<br>
+  author={Zhang, Fan and Ma, Di and Feng, Chen and Bull, David R},<br>
+  journal={IEEE MultiMedia},<br>
+  year={2021},<br>
+  publisher={IEEE}<br>
+}</p>
+
+            </div>
+			<hr />
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
