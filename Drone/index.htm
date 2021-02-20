@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
    
-    <title>Video Compression with CNN-based Post Processing</title>
+    <title>A Simulation Environment for Drone Cinematography</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="../css/style.css">
@@ -37,17 +37,20 @@
   
                         <div class="col-md-10">
                             <div class="title">
-                                <h1><b><center>Video Compression with CNN-based Post Processing</center></b></h1>
+                                <h1><b><center>A Simulation Environment for Drone Cinematography</center></b></h1>
                                 <div class="container-sm">
 								  <div class="row justify-content-md-center">									                                       
                                         <div class="col-sm-auto">
                                             <p><a href='https://seis.bristol.ac.uk/~eexfz/index.htm'>Fan Zhang</a></p>
                                         </div>
 										 <div class="col-sm-auto">
-                                            <p>Di Ma</p>
+                                            <p>Steven Boyle</p>
+                                        </div>
+										<div class="col-sm-auto">
+                                            <p>Dave Hall</p>
                                         </div>
 																				 <div class="col-sm-auto">
-                                            <p>Chen Feng</p>
+                                            <p>Tao Xu</p>
                                         </div>
 									<div class="col-sm-auto">
                                             <p><a href='http://www.bristol.ac.uk/engineering/people/paul-r-hill/index.html'>David Bull</a></p>
@@ -69,26 +72,31 @@
             </div>
             <div class="container-md">
                 <h2>About</h2>
-                <p>In recent years, video compression techniques have been significantly challenged by the rapidly increased demands associated with high quality and immersive video content. Among various compression tools, post-processing can be applied on reconstructed video content to mitigate visible compression
-artefacts and to enhance overall perceptual quality. Inspired by advances in deep learning, we propose a new CNN-based post-processing approach, which has been integrated with two state-of-the-art coding standards, VVC and AV1. 
- </p>
+                <p>Simulations of drone camera platforms based on actual environments have been identified as being useful for shot planning, training and re-hearsal for both single and multiple drone operations. This is particularly relevant for live events, where there is only one opportunity to get it right on the day.
+<br>
+<br>
+In this context, we present a workflow for the simulation of drone operations exploiting realistic background environments constructed within Unreal Engine 4 (UE4). Methods for environmental image capture, 3D reconstruction (photogrammetry) and the creation of foreground assets are presented along with a flexible and user-friendly simulation interface. Given the geographical location of the selected area and the camera parameters employed, the scanning strategy and its associated flight parameters are first determined for image capture. Source imagery can be extracted from virtual globe software or obtained through aerial photography of the scene (e.g. using drones). The latter case is clearly more time consuming but can provide enhanced detail, particularly where coverage of virtual globe software is limited. 
+<br>
+<br>
+The captured images are then used to generate 3D background environment models employing photogrammetry software. The reconstructed 3D models are then imported into the simulation interface as background environment assets together with appropriate foreground object models as a basis for shot planning and rehearsal. The tool supports both free-flight and parameterisable standard shot types along with programmable scenarios associated with foreground assets and event dynamics. It also supports the exporting of flight plans. Camera shots can also be designed to provide suitable coverage of any landmarks which need to appear in-shot. This simulation tool will contribute to enhanced productivity, improved safety (awareness and mitigations for crowds and buildings), improved confidence of operators and directors and ultimately enhanced quality of viewer experience.</p>
             </div>
             <hr />
             <div class="container-md">
-                <h2 id="poster">Performance</h2>
-                The results show consistent coding gains on all tested sequences at various spatial resolutions, with average bit rate savings of 4.0% and 5.8% against original VVC and AV1 respectively (based on the assessment of PSNR). This network has also been trained with perceptually inspired loss functions, swhich have further improved reconstruction quality based on perceptual quality assessment (VMAF), with average coding gains of 13.9% over VVC and 10.5% against AV1.
+                <h2 id="poster">Demo Videos</h2>
+                <a href='https://drive.google.com/file/d/18jwnwFl82YoDyVN40oFnG9BreJ787_B2/view?usp=sharing'>Boat.mp4</a>			
+				<br>
+				<a href='https://drive.google.com/file/d/1ZC6e-l9EKFnRqC_PLuX5DN_ihcMqQ4lS/view?usp=sharing'>Cyclist.mp4</a>
 
 
             </div>
 			<hr />
             <div class="container-md">
                 <h2>Reference</h2>
-<p>@article{zhang2021video,<br>
-  title={Video compression with CNN-based post processing},<br>
-  author={Zhang, Fan and Ma, Di and Feng, Chen and Bull, David R},<br>
-  journal={IEEE MultiMedia},<br>
-  year={2021},<br>
-  publisher={IEEE}<br>
+<p>@article{zhang2020simulation,<br>
+  title={A simulation environment for drone cinematography},<br>
+  author={Zhang, Fan and Hall, David and Xu, Tao and Boyle, Stephen and Bull, David},<br>
+  journal={arXiv preprint arXiv:2010.01315},<br>
+  year={2020}<br>
 }</p>
 
             </div>
