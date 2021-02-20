@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
    
-    <title>Video Compression with CNN-based Post Processing</title>
+    <title>ViSTRA: Video Compression based on Resolution Adaptation</title>
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
        <link rel="stylesheet" href="../css/style.css">
@@ -33,19 +33,16 @@
   
                         <div class="col-md-10">
                             <div class="title">
-                                <h1><center>Video Compression with CNN-based Post Processing</center></h1>
+                                <h1><center>ViSTRA: Video Compression based on Resolution Adaptation</center></h1>
                                 <div class="container-sm">
 								  <div class="row justify-content-md-center">									                                       
                                         <div class="col-sm-auto">
                                             <p><a href='https://seis.bristol.ac.uk/~eexfz/index.htm'>Fan Zhang</a></p>
                                         </div>
 										 <div class="col-sm-auto">
-                                            <p>Di Ma</p>
+                                            <p>Mariana Afonso</p>
                                         </div>
-																				 <div class="col-sm-auto">
-                                            <p>Chen Feng</p>
-                                        </div>
-									<div class="col-sm-auto">
+										<div class="col-sm-auto">
                                             <p><a href='http://www.bristol.ac.uk/engineering/people/paul-r-hill/index.html'>David Bull</a></p>
                                         </div>
 									
@@ -65,14 +62,25 @@
             </div>
             <div class="container-md">
                 <h2>About</h2>
-                <p>In recent years, video compression techniques have been significantly challenged by the rapidly increased demands associated with high quality and immersive video content. Among various compression tools, post-processing can be applied on reconstructed video content to mitigate visible compression
-artefacts and to enhance overall perceptual quality. Inspired by advances in deep learning, we propose a new CNN-based post-processing approach, which has been integrated with two state-of-the-art coding standards, VVC and AV1. 
+                <p>ViSTRA is a new video compression framework
+(ViSTRA2) which exploits adaptation of spatial resolution and
+effective bit depth, down-sampling these parameters at the
+encoder based on perceptual criteria, and up-sampling at the
+decoder using a deep convolution neural network. 
  </p>
             </div>
             <hr />
             <div class="container-md">
                 <h2 id="poster">Performance</h2>
-                The results show consistent coding gains on all tested sequences at various spatial resolutions, with average bit rate savings of 4.0% and 5.8% against original VVC and AV1 respectively (based on the assessment of PSNR). This network has also been trained with perceptually inspired loss functions, swhich have further improved reconstruction quality based on perceptual quality assessment (VMAF), with average coding gains of 13.9% over VVC and 10.5% against AV1.
+                ViSTRA2 has
+been integrated with the reference software of both the HEVC
+(HM 16.20) and VVC (VTM 4.01), and evaluated under the
+Joint Video Exploration Team Common Test Conditions using
+the Random Access configuration. Our results show consistent
+and significant compression gains against HM and VVC based on
+Bjonegaard Delta measurements, with average BD-rate savings of
+12.6% (PSNR) and 19.5% (VMAF) over HM and 5.5% (PSNR)
+and 8.6% (VMAF) over VTM. 
 
 
             </div>
@@ -80,12 +88,22 @@ artefacts and to enhance overall perceptual quality. Inspired by advances in dee
             <div class="container-md">
                 <h2>Citation</h2>
 				<pre class="citation">
-@article{zhang2021video,
-  title={Video compression with CNN-based post processing},
-  author={Zhang, Fan and Ma, Di and Feng, Chen and Bull, David R},
-  journal={IEEE MultiMedia},
-  year={2021},
+@article{afonso2018video,
+  title={Video compression based on spatio-temporal resolution adaptation},
+  author={Afonso, Mariana and Zhang, Fan and Bull, David R},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology},
+  volume={29},
+  number={1},
+  pages={275--280},
+  year={2018},
   publisher={IEEE}
+}
+
+@article{zhang2019vistra2,
+  title={Vistra2: Video coding using spatial resolution and effective bit depth adaptation},
+  author={Zhang, Fan and Afonso, Mariana and Bull, David R},
+  journal={arXiv preprint arXiv:1911.02833},
+  year={2019}
 }</pre>
 
             </div>
