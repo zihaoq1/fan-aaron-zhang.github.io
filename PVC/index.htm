@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+   
+    <title>Parametric Video Coding</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+       <link rel="stylesheet" href="../css/style.css">
+</head>
+
+        <!-- you should probably put some google analytics / meta bits and pieces
+	    here : PRH 
+    <meta property="og:title" content="Paul Hill's Website"> etc.
+      <script async src="https://www.googletagmanager.com/gtag/js?id=??????????"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '??????????');
+  </script>
+    -->
+
+<body id="page-top">
+    <div class="page-container">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="row vertical-align">
+  
+                        <div class="col-md-10">
+                            <div class="title">
+                                <h1><center>Parametric Video Coding</center></h1>
+                                <div class="container-sm">
+								  <div class="row justify-content-md-center">									                                       
+                                        <div class="col-sm-auto">
+                                            <p><a href='https://seis.bristol.ac.uk/~eexfz/index.htm'>Fan Zhang</a></p>
+                                        </div>
+										 		<div class="col-sm-auto">
+                                            <p><a href='http://www.bristol.ac.uk/engineering/people/paul-r-hill/index.html'>David Bull</a></p>
+                                        </div>
+									
+                                    </div>
+									<center><p>University of Bristol</p></center>
+                                </div>
+                            </div>
+                        </div>
+			<div class="col-md-2">
+			    <p><a href='https://www.bristol.ac.uk'><img src="../uob-logo.svg" width="100%" height="20%" alt=""></a></p>
+			    <p><a href='https://www.bristol.ac.uk/vision-institute'><img src="../bvilogo.png" width="100%" height="20%" alt=""></a></p>
+			     <p><a href='https://vilab.blogs.bristol.ac.uk'><img src="../VILogo.jpg" width="100%" height="20%" alt=""></a></p>
+			    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md">
+                <h2>About</h2>
+                <p>In most cases, the target of video compression is to provide good subjective quality rather than to simply produce the most similar pictures to the originals. Based on this assumption, it is possible to conceive of a compression scheme where an analysis/synthesis framework is employed rather than the conventional energy minimization approach. If such a scheme were practical, it could offer lower bitrates through reduced residual and motion vector coding, using a parametric approach to describe texture warping and/or synthesis. 
+ </p>
+ 
+ Instead of encoding whole images or prediction residuals after translational motion estimation, our algorithm employs a perspective motion model to warp static textures and utilises texture synthesis to create dynamic textures. Texture regions are segmented using features derived from the complex wavelet transform and further classified according to their spatial and temporal characteristics. Moreover, a compatible artefact-based video metric (AVM) is proposed with which to evaluate the quality of the reconstructed video. This is also employed in-loop to prevent warping and synthesis artefacts. The proposed algorithm has been integrated into an H.264 video coding framework. The results show significant bitrate savings, of up to 60% compared with H.264 at the same objective quality (based on AVM) and subjective scores.
+            </div>
+            
+			<hr />
+            <div class="container-md">
+                <h2>Citation</h2>
+				<pre class="citation">
+@article{zhang2011parametric,
+  title={A parametric framework for video compression using region-based texture models},
+  author={Zhang, Fan and Bull, David R},
+  journal={IEEE Journal of Selected Topics in Signal Processing},
+  volume={5},
+  number={7},
+  pages={1378--1392},
+  year={2011},
+  publisher={IEEE}
+}
+
+@article{ndjiki2012perception,
+  title={Perception-oriented video coding based on image analysis and completion: A review},
+  author={Ndjiki-Nya, Patrick and Doshkov, Dimitar and Kaprykowsky, Hagen and Zhang, Fan and Bull, Dave and Wiegand, Thomas},
+  journal={Signal Processing: Image Communication},
+  volume={27},
+  number={6},
+  pages={579--594},
+  year={2012},
+  publisher={Elsevier}
+}</pre>
+
+            </div>
+			<hr />
+            
+
+        </div>
+    </div>
+</body>
+
+</html>
