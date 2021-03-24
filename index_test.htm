@@ -155,7 +155,7 @@ Engineering</A>, <A HREF="http://www.bris.ac.uk/">University of Bristol</A>. I h
 				<p><b><font SIZE="4"><a id="showOlderNews" href="#olderNews">[Older news and activities]</a></font></b></p>				
 				<div id="olderNews">
 				<a name="olderNews" />				
-				                <li><font SIZE="4">Jan 2020:</font> Organising committee (Finance) <a href="https://pcs2021.org/">PCS 2021</a></li> 
+				                test
 				</div>
 
 				</ul>
@@ -523,7 +523,17 @@ A. V. Katsenou, A. Mackin, D. Ma, F. Zhang and D. R. Bull, <em>IEEE COMSOC MMTC 
 </ol>
 </td>
 
-
+	<script>
+      $(function() {
+	  var olderNews = $("#olderNews");
+	  olderNews.hide();
+	  $("#showOlderNews").click(function() {
+	      olderNews.show(1000);
+	  });
+      });
+    </script>
+	
+	
 <!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=11440198; 
@@ -546,6 +556,8 @@ analytics"></a></div></noscript>
             <hr />
         </div>
     </div>
+	
+
 </body>
 
 </html>
