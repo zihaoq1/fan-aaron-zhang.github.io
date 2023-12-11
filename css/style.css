@@ -16,6 +16,86 @@ body {
 .list-icons
 .list-inline-item i:hover{color:#A0A0FF}
 
+table.papers{
+    /* padding:0px;*/
+    margin-left:20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    border:0px;
+    border-collapse:collapse;
+}
+td.thumbs{
+    width:30%;
+    text-align: center;
+}
+table.papers td{
+    padding: 10px;
+    border:0px;
+    border-collapse:collapse;
+}
+td.detail{
+    width:70%;
+    text-align: left;
+}
+    
+img.thumbs {
+    max-width:100%;
+}
+
+#papertitle
+{
+    color: #1772d0;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+img{ 
+    max-height:350px;
+}
+.imgtable img{ 
+    max-width:500px
+}
+
+/* table#tlayout {
+    border: none;
+    border-collapse: separate;
+    background: white;
+} */
+
+
+/* table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 2px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border: 1px solid #777777;
+} */
+
+table + table {
+    margin-top: 1em;
+}
+
+tr.heading {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+img {
+    border: none;
+}
+
+table.imgtable, table.imgtable td {
+    border: none;
+    text-align: left;
+}
+
 a {
     font-weight: bold;
     color: #00A;
